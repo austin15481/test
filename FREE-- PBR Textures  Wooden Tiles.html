@@ -1,7 +1,48 @@
 <html>
 <head>
+ <script language="JavaScript">
+ 
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w' , 'u' , 'i');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+</script>
 </head>
-<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
 
   <tr><td><a href="https://adshort1.blogspot.com/2020/04/arabcgcom.html#?o=0f7125758774602efea2a97231f62e3ea9c1e6cd5928696e9f2042043da0d5cc034d00e4cb3131c9177439e76b88a8468b1110c92bd19e3b" target="_blank" ><img src="https://1.bp.blogspot.com/--tMKAp2S7FM/X4yH87lqvHI/AAAAAAAAazQ/_7nwTm8r90oK6DCFIUwFNFZaJ3wY8UefACLcBGAsYHQ/s400/001.png" width=200" height="200"  alt="001"></a></td>
 <td><a href="https://adshort1.blogspot.com/2020/04/arabcgcom.html#?o=cb80e887b8242fe9b178c3d77c42325fbfb833c61c05beb73db2167332b7bdf8120c483e8e79a4ef90eefb220592cb91975387897ecddb80" target="_blank" ><img src="https://1.bp.blogspot.com/-0YdOiL8HIyQ/X4yH8xyzghI/AAAAAAAAazM/mjTCUO-yNQA6-1KEsueIhu5aCFb85h_lQCLcBGAsYHQ/s400/002.png" width=200" height="200"  alt="002"></a></td>
