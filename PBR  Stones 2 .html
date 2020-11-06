@@ -1,7 +1,48 @@
 <html>
 <head>
+ <script language="JavaScript">
+ 
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w' , 'u' , 'i');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+</script>
 </head>
-<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
     <tr><td><a href="https://adshort1.blogspot.com/2020/04/arabcgcom.html#?o=f8e9986d65b4365f29f37ada337e303b06ad8a059ad7b57514e65210076d9c656daac2cb4d77f7273b51cb41cfd063de27840de9f6f7cdb4" target="_blank" ><img src="https://1.bp.blogspot.com/-6BnewnmEgcY/X4whw_jakRI/AAAAAAAAacA/Wmp92QmZo9MnjJe3Sdlhvo8AZA7RlspngCLcBGAsYHQ/s0/01.jpg" width=200" height="200"  alt="001"></a></td>
 <td><a href="https://adshort1.blogspot.com/2020/04/arabcgcom.html#?o=bdcc25a50835f1d399c7a0ed72e8540838571cf381430ed2f3c17b5d6517e905978c7e4b1883585af3517e35448507468feee3395a79b45b" target="_blank" ><img src="https://1.bp.blogspot.com/-WB-nUp7hVco/X4whwxgBmjI/AAAAAAAAab8/vo11VfZ2osMku0TX8awedLKZGGaDxl-6QCLcBGAsYHQ/s0/02.jpg" width=200" height="200"  alt="002"></a></td>
 <td><a href="https://adshort1.blogspot.com/2020/04/arabcgcom.html#?o=1cfb81525888bc98156c687cf2fc64d4e37da1bd71b2b9ae4404393feab06e2439bdcd91d379a68e7ee74fbe715a0b54bfeac5a1fa2cbd81" target="_blank" ><img src="https://1.bp.blogspot.com/-IaCEFmMYVfA/X4whwhXg3jI/AAAAAAAAab4/Ko9LWuUCn_sL8iFiNmcDpxWKAHW23N8rACLcBGAsYHQ/s0/03.jpg" width=200" height="200"  alt="003"></a></td>
