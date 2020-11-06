@@ -1,7 +1,48 @@
 <html>
 <head>
+ <script language="JavaScript">
+ 
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w' , 'u' , 'i');
+var key;
+var isCtrl;
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+</script>
 </head>
-<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+
    <tr><td><a href="http://www.mediafire.com/?lj9hhahs3zgzelz" target="_blank" ><img src="https://1.bp.blogspot.com/-hWk5VeHVhrw/X4wZn4KnZbI/AAAAAAAAaUw/3GXEY5t0Bv8s24BXcrreJsnl0huWhiP2gCLcBGAsYHQ/s0/001.jpg" width=200" height="200"  alt="001"></a></td>
 <td><a href="http://www.mediafire.com/?p0mp21k85c9by7f" target="_blank" ><img src="https://1.bp.blogspot.com/-FQdLXGCNx1U/X4wZn0uwZKI/AAAAAAAAaU0/yV4OidWvbGs4itobnut0Bqd4ebkWs-ZgQCLcBGAsYHQ/s0/002.jpg" width=200" height="200"  alt="002"></a></td>
 <td><a href="http://www.mediafire.com/?8mqska7v2mdtakd" target="_blank" ><img src="https://1.bp.blogspot.com/-6BmHyG7qAYU/X4wZn-gMX9I/AAAAAAAAaU4/nxeJgtmL9IMIPG5V44v4xbf6uAfB2gvMACLcBGAsYHQ/s0/003.jpg" width=200" height="200"  alt="003"></a></td>
