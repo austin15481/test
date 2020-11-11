@@ -1,4 +1,10 @@
 <?xml version = "1.0" encoding = "utf-8"?>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Montserrat:400,400i,400,500,600,700,700i|Righteous' media='all' rel='stylesheet' type='text/css'/>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+ <link href='//cdn.linearicons.com/free/1.0.0/icon-font.min.css' rel='stylesheet'/>
+  </head>
 <s_data>
 <student>
 <name>adel</name>
