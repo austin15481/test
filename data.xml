@@ -1,4 +1,4 @@
-<?xml version = "1.0" encoding = "utf-8"?>
+<?xml version = "1.0" encoding = "UTF-8"?>
 
 <s_data>
 <student>
@@ -31,7 +31,7 @@
   </student>
     <student>
   <name>ADAM</name>
-   <link>https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fabstract-blue-geometric-shapes-background_1035-17545.jpg%3Fsize%3D626%26ext%3Djpg&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbackground&tbnid=v2hClYlC2HKtzM&vet=12ahUKEwjBrcjn6fnsAhUSgRoKHRYvBlMQMygAegUIARDRAQ..i&docid=bKJ3gdlWTtaNoM&w=626&h=425&q=background&safe=strict&ved=2ahUKEwjBrcjn6fnsAhUSgRoKHRYvBlMQMygAegUIARDRAQ</link>
+   <link>https://www.google.com.eg</link>
   </student>
 </s_data>
 
