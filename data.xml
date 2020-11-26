@@ -1,36 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<s_data>
-<student>
-<name>adel</name>
-<link>https://www.google.com</link>
-</student>
-<student>
-<name>ali</name>
-<link>https://www.arabcg.com</link>
-</student>
-<student>
-<name>omer</name>
-<link>https://www.yahoo.com</link>
-</student>
-<student>
-<name>aa</name>
-<link>https://www.bing.com</link>
-</student>
-  <student>
-  <name>cc</name>
-   <link>https://vidoza.net/</link>
-  </student>
-   <student>
-  <name>ЎіўКЎ®</name>
-   <link>https://torrentz.pl/</link>
-  </student>
-   <student>
-  <name>Hana</name>
-   <link>https://www.google.com</link>
-  </student>
-    <student>
-  <name>ADAM</name>
-   <link>https://www.google.com.eg </link>
-  </student>
-</s_data>
+<?xml version="1.0" encoding="WE8MSWIN1252" ?> 
+<root>
 
+
+
+<models>
+	<name>Џ«ѕб</name>
+	<link>http://www.google.com</link>
+	<photo>https://photostyler1.blogspot.com/2020/11/blog-post.html</photo>
+	<pra>
+»”г «ббе «б—Ќгд «б—Ќнг
+«бЌгѕ ббе —» «бЏ«бгнд «б—Ќгд «б—Ќнг 
+г«бя нжг «бѕнд
+«н«я дЏ»ѕ ж«н«я д” Џнд 
+«еѕд« «б’—«Ў «бг” ёнг 
+’—«Ў «бб–нд «дЏг  Џбнег 
+џн— «бгџ÷ж» Џбнег 
+жб« «б÷«бнд 
+’ѕё «ббе «бЏўнг </pra>
+</models>
+
+
+</root>
